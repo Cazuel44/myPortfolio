@@ -1,0 +1,8 @@
+.customButton {
+    font-size: large;
+    color: #00D1A0;
+    background-color:#333333 ;
+    border-color: #00D1A0;
+    border-radius: 4px;
+    padding: 8px;
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "nombre": "Proyecto 1",
+    "tecnologias": ["JavaScript", "React.js", "Node.js"],
+    "enlaceGitHub": "https://github.com/tuusuario/proyecto1",
+    "imagen": "url-a-la-imagen-del-proyecto1.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Proyecto 2",
+    "tecnologias": ["TypeScript", "React.js", "Express"],
+    "enlaceGitHub": "https://github.com/tuusuario/proyecto2",
+    "imagen": "url-a-la-imagen-del-proyecto2.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Proyecto 3",
+    "tecnologias": ["HTML", "CSS", "JavaScript"],
+    "enlaceGitHub": "https://github.com/tuusuario/proyecto3",
+    "imagen": "url-a-la-imagen-del-proyecto3.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Proyecto 4",
+    "tecnologias": ["HTML", "CSS", "JavaScript"],
+    "enlaceGitHub": "https://github.com/tuusuario/proyecto4",
+    "imagen": "url-a-la-imagen-del-proyecto4.jpg"
+  }
+]

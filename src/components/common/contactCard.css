@@ -1,0 +1,50 @@
+.contactContainer {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    background-color: #fff;
+}
+  
+.contactHeader {
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+.contactHeader h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+  
+.contactHeader p {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #666;
+}
+  
+.contactInfo {
+    margin-bottom: 20px;
+}
+  
+.contactInfo p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #444;
+}
+  
+.contactLinks {
+    display: flex;
+    justify-content: space-around;
+}
+  
+.contactLinks a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #1e90ff;
+}
+  
+.contactLinks a:hover {
+    color: #0073e6;
+}

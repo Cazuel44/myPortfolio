@@ -1,0 +1,71 @@
+.projectsCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Espacio entre tarjetas */
+    padding: 20px;
+    /* Espaciado interno del contenedor */
+    background-color: #474747;
+    /* Fondo claro para el contenedor de las tarjetas */
+}
+
+.cardContent {
+    background-color: #121212;
+    /* Fondo blanco para cada tarjeta */
+    border: 2px solid #00D1A0;
+    /* Borde verde agua */
+    border-radius: 12px;
+    /* Bordes redondeados */
+    padding: 16px;
+    /* Espaciado interno de la tarjeta */
+    width: 300px;
+    /* Ancho fijo para cada tarjeta */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Animación de transición */
+}
+
+.cardContent img {
+    width: 100%;
+    /* La imagen ocupa el 100% del ancho de la tarjeta */
+    height: auto;
+    /* Mantiene la relación de aspecto de la imagen */
+    border-radius: 8px;
+    /* Bordes redondeados para la imagen */
+}
+
+.cardContent h2 {
+    margin: 16px 0 8px;
+    /* Espaciado alrededor del título */
+    font-size: 1.5rem;
+    /* Tamaño del texto del título */
+}
+
+.cardContent p {
+    /* margin: 0 0 8px; */
+    /* Espaciado en el párrafo */
+    color: #555;
+    /* Color de texto gris oscuro */
+}
+
+.cardContent a {
+    color: #00D1A0;
+    /* Color verde agua para el enlace */
+    text-decoration: none;
+    /* Sin subrayado en el enlace */
+    font-weight: bold;
+    /* Texto en negrita para el enlace */
+}
+
+.cardContent a:hover {
+    text-decoration: underline;
+    /* Subrayado del enlace al pasar el ratón */
+}
+
+.cardContent:hover {
+    transform: translateY(-5px);
+    /* Efecto de elevación al pasar el ratón */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Sombra más prominente al pasar el ratón */
+}

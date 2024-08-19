@@ -1,0 +1,40 @@
+.containerAboutMe {
+    align-items: center;
+}
+
+.h1Main {
+    width: 100%; /* Asegura que el contenedor del h1 ocupe todo el ancho disponible */
+    display: flex;
+    justify-content: center; /* Centra el h1 horizontalmente */
+    margin-bottom: 20px; /* Espacio debajo del h1 */
+}
+
+.contentAboutMe {
+    display: flex;
+    justify-content: flex-start/* space-between */; /* Distribuye espacio entre los elementos (h1 y p) */
+    align-items: center; /* Alinea todos los elementos verticalmente al centro */
+    gap: 50px; /* Espacio entre los elementos */
+    margin: 16px;
+    /* padding: 20px; */
+    
+}
+
+
+
+.contentAboutMe p {
+    flex: 1; 
+    margin: 0; 
+    padding: 16px;;
+    border: 2px solid #00D1A0;
+    border-radius: 16px;
+    min-height: 100px;
+
+    
+}
+
+.button1AboutMe {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
