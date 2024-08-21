@@ -25,23 +25,34 @@
     color: #00D1A0;
 }
 
+.navBarHeder {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+}
+
 .line {
     width: 100%;
     height: 4px; /* Altura de la línea */
-    background: linear-gradient(to right, #ff0404 30%, transparent);
+    background: linear-gradient(to left, #ff0404 30%, transparent);
     position: absolute;
     bottom: 0; /* Posiciona la línea en la parte inferior del header */
     left: 0;
     background-size: 200% 100%;
-    animation: laser 3s infinite linear; /* Aplicar animación */
+    animation: laser 4s infinite linear; /* Aplicar animación */
+    border-radius: 16px;
 }
 
-/* Animación de la línea tipo láser */
+
 @keyframes laser {
     0% {
-        background-position: 0% 0%;
+        background-position: 100% 0%; /* Comienza desde la derecha */
+    }
+    50% {
+        background-position: 0% 0%; /* Se ilumina completamente a la izquierda */
     }
     100% {
-        background-position: 100% 0%;
+        background-position: 100% 0%; /* Reinicia la posición en la derecha */
     }
 }

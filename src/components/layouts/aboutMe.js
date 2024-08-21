@@ -15,7 +15,7 @@ export const AboutMe = ({ onShowProjects }) => {
             <div className="contentAboutMe">
 
                 <p>
-                    ¡Hola! Soy Rodrigo Cortes, un padawan trainee siguiendo el camino Jedi de los maestros full-stack 🚀.
+                    ¡Hola!, soy un padawan siguiendo el camino Jedi de los maestros full-stack 🚀.
                     Me apasiona la tecnología y el desarrollo web, y he logrado crear aplicaciones básicas desde el frontend hasta el backend,
                     incluyendo una aplicación móvil 📱.
                 </p>
@@ -24,6 +24,13 @@ export const AboutMe = ({ onShowProjects }) => {
                     utilizando tecnologías como JavaScript, React.js, React Native y Node.js. He desarrollado aplicaciones web tanto en el frontend,
                     con un enfoque en HTML, CSS, y React.js, como en el backend, utilizando Node.js y MongoDB para crear aplicaciones funcionales enfocadas al E-commerce 🛒.
                 </p>
+            </div>
+            <div>
+                <h1>Experiencia</h1>
+                <p>
+                    Estoy en busca de mi primera oportunidad laboral ya que la experiencia que tengo en este momento es solo de los proyectos que he presentado en coderhouse.
+                </p>
+                
             </div>
             <div className='button1AboutMe'>
                 <Button onClick={onShowProjects}>Mis Proyectos</Button>
