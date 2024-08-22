@@ -1,30 +1,42 @@
 [
   {
     "id": 1,
-    "nombre": "Proyecto 1",
-    "tecnologias": ["JavaScript", "React.js", "Node.js"],
-    "enlaceGitHub": "https://github.com/tuusuario/proyecto1",
+    "nombre": "KawaLovers",
+    "tecnologias": [ "HTML", "Css", "Boostrap"],
+    "descripcion": "Desarrollo de página web enfocado al E-commerce (venta motocicletas) utilizando html css con diseño responsive para diferentes tamaños de dispositivos",
+    "enlaceGitHub": "https://github.com/Cazuel44/Cursodesarrolloweb",
     "imagen": "url-a-la-imagen-del-proyecto1.jpg"
   },
   {
     "id": 2,
-    "nombre": "Proyecto 2",
-    "tecnologias": ["TypeScript", "React.js", "Express"],
-    "enlaceGitHub": "https://github.com/tuusuario/proyecto2",
+    "nombre": "Tus tillas",
+    "tecnologias": ["JavaScript", "HTML", "Css"],
+    "descripcion": "aplicacion web enfocada al E-commerce(tienda de zapatillas) utilizando JavaScript",
+    "enlaceGitHub": "https://github.com/Cazuel44/Tustillas-Rodrigo-Cortes",
     "imagen": "url-a-la-imagen-del-proyecto2.jpg"
   },
   {
     "id": 3,
-    "nombre": "Proyecto 3",
-    "tecnologias": ["HTML", "CSS", "JavaScript"],
-    "enlaceGitHub": "https://github.com/tuusuario/proyecto3",
+    "nombre": "monitorealo",
+    "tecnologias": ["Reactjs", "JavaScript", "Css", "Firebase"],
+    "descripcion": "Aplicacion web enfocada al E-commerce(tienda de monitores) utilizando Reacjs ",
+    "enlaceGitHub": "https://github.com/Cazuel44/Monitorealo-RodrigoCortes",
     "imagen": "url-a-la-imagen-del-proyecto3.jpg"
   },
   {
     "id": 4,
-    "nombre": "Proyecto 4",
-    "tecnologias": ["HTML", "CSS", "JavaScript"],
-    "enlaceGitHub": "https://github.com/tuusuario/proyecto4",
+    "nombre": "Proyecto Backend",
+    "tecnologias": ["JavaScript", "Handlebars", "Nodejs", "mongoDB"],
+    "descripcion": "Aplicación Back-end enfocada al E-commerce utilizando Nodejs, mongoDB, Javascript, y Handlebars(para visualizar el front). - JSON WEB TOKEN PASSPORT - BCRYPT - SUPERTEST - CHAI -NODEMAILER - FAKER - MOCHA - MONGOOSE - COOKIE PARSER - MULTER",
+    "enlaceGitHub": "https://github.com/Cazuel44/BackendRodrigoCortes",
+    "imagen": "url-a-la-imagen-del-proyecto4.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Alcoholegio",
+    "tecnologias": ["ReactNative", "JavaScript", "Firebase", "Expo"],
+    "descripcion": "Aplicación móvil de venta de bebidas alcohólicas, creada en React Native con JavaScript y enfocada solo para Android. Es una tienda completa con registro, login, autenticación y base de datos en Firebase. Los usuarios pueden crear una cuenta, ingresar, ver el stack de la tienda, categorías, todos los productos, detalles de un producto y agregar al carrito. En el stack de carrito, los usuarios pueden ver lo que han agregado, eliminar productos y confirmar compra. En el stack de órdenes, se pueden ver las órdenes de compra asociadas al usuario logueado, y también tiene un stack de perfil que permite modificar la foto de perfil y la ubicación.",
+    "enlaceGitHub": "https://github.com/Cazuel44/Alcoholegio",
     "imagen": "url-a-la-imagen-del-proyecto4.jpg"
   }
 ]

@@ -9,8 +9,8 @@ export const ContactCard = () => {
         <p>Full-Stack Developer trainee</p>
       </div>
       <div className="contactInfo">
-        <p>Email: rodrigo.cortes@example.com</p>
-        <p>Teléfono: +56 9 1234 5678</p>
+        <p>Email: rodrigo.cortes@gmail.com</p>
+        <p>Teléfono: +56 9 33242803</p>
         <p>Ubicación: Coquimbo, Chile</p>
       </div>
       <div className="contactLinks">

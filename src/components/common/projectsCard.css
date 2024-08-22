@@ -69,3 +69,14 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     /* Sombra más prominente al pasar el ratón */
 }
+
+.iconsContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.iconsContainer span svg {
+    width: 24px;
+    height: 24px;
+   
+}
