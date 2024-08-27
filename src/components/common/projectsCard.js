@@ -22,26 +22,33 @@ const tecnologiesIcons = {
   'Nodejs': <NodeJsIcon />,
   'Reactjs': <ReactIcon />,
   'ReactNative': <ReactNativeIcon />,
-  'Handlebars': <HandlebarsIcon/>,
-  'Firebase': <FirebaseIcon/>,
-  'Expo': <ExpoIcon/>
+  'Handlebars': <HandlebarsIcon />,
+  'Firebase': <FirebaseIcon />,
+  'Expo': <ExpoIcon />
 }
 
 export const ProjectsCard = () => {
   return (
     <div className="projectsCardContainer">
       {projectsData.map((project) => (
-        <div key={project.id} className="cardContent">
-          <img src={project.imagen} /* alt={project.nombre} */ />
-          <h2>{project.nombre}</h2>
-          <p>Descripcion: {project.descripcion}</p>
-          <p>Tecnologías: </p>
-          <div className="iconsContainer">
-            {project.tecnologias.map((tech, index) => (
-              <span key={index}>{tecnologiesIcons[tech]}</span>
-            ))}
+        <div key={project.id} className="projectCardContent">
+          <div className="projectsCardContentContainer">
+            <div className="projectsCardTextContent">
+              <h2>{project.nombre}</h2>
+              <p>Descripcion: {project.descripcion}</p>
+              <p>Tecnologías: </p>
+              <div className="projectsCardIconsContainer">
+                {project.tecnologias.map((tech, index) => (
+                  <span key={index}>{tecnologiesIcons[tech]}</span>
+                ))}
+              </div>
+              <a href={project.enlaceGitHub} target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
+            </div>
+            <div className='projectCardImgBox'>
+              <img src={project.imagen} /* alt={project.nombre} */ />
+            </div>
+
           </div>
-          <a href={project.enlaceGitHub} target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
         </div>
       ))}
     </div>

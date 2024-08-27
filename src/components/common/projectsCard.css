@@ -1,82 +1,185 @@
 .projectsCardContainer {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    /* Espacio entre tarjetas */
-    padding: 20px;
-    /* Espaciado interno del contenedor */
-    background-color: #474747;
-    /* Fondo claro para el contenedor de las tarjetas */
-}
-
-.cardContent {
-    background-color: #121212;
-    /* Fondo blanco para cada tarjeta */
-    border: 2px solid #00D1A0;
-    /* Borde verde agua */
-    border-radius: 12px;
-    /* Bordes redondeados */
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
     padding: 16px;
-    /* Espaciado interno de la tarjeta */
-    width: 300px;
-    /* Ancho fijo para cada tarjeta */
+    background-color: #474747;
+    /* height: 100vh; */
+    /*   */
+}
+
+.projectCardContent {
+    background-color: #121212;
+    border: 2px solid #00D1A0;
+    border-radius: 12px;
+    padding: 16px;
+    width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+    /* min-height: 400px;  */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Sombra sutil */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    /* Animación de transición */
+    box-sizing: border-box;
+    display: flex;
+    /* grid-template-columns: 1fr 1fr;  *//* Divide en dos columnas iguales */
+    gap: 16px;
+    height: 100%;
 }
 
-.cardContent img {
-    width: 100%;
-    /* La imagen ocupa el 100% del ancho de la tarjeta */
-    height: auto;
-    /* Mantiene la relación de aspecto de la imagen */
-    border-radius: 8px;
-    /* Bordes redondeados para la imagen */
+.projectsCardContentContainer {
+    display: grid; /* Cambiar a Grid si se necesita una estructura de columnas */
+    grid-template-columns: 2fr 1fr; /* Asegura que los elementos se distribuyan en dos columnas */
+    gap: 100px;
+    align-items: stretch; /* Asegura que todos los elementos hijos se estiren para ocupar la misma altura */
 }
 
-.cardContent h2 {
+.projectsCardTextContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-column: 1 / 2; /* Ocupa la primera columna */
+}
+
+.projectCardImgBox {
+    display: flex;
+    justify-content: center;
+    /* justify-content: space-evenly; */
+    /* background-color: aliceblue; */
+    /* grid-column: 2 / 2; */ 
+    /* overflow: hidden; */
+    width: 100%; /* Asegura que el contenedor de la imagen ocupe toda la columna */
+    height: 100%;
+    /* height: 500px; */
+}
+
+.projectCardImgBox img {
+    max-width: 100%; 
+    max-height: 400px; 
+    border: 2px solid #00D1A0;
+    object-fit: contain;
+}
+
+.projectCardContent h2 {
     margin: 16px 0 8px;
-    /* Espaciado alrededor del título */
     font-size: 1.5rem;
-    /* Tamaño del texto del título */
 }
 
-.cardContent p {
-    /* margin: 0 0 8px; */
-    /* Espaciado en el párrafo */
+.projectCardContent p {
     color: #555;
-    /* Color de texto gris oscuro */
 }
 
-.cardContent a {
+.projectCardContent a {
     color: #00D1A0;
-    /* Color verde agua para el enlace */
     text-decoration: none;
-    /* Sin subrayado en el enlace */
     font-weight: bold;
-    /* Texto en negrita para el enlace */
 }
 
-.cardContent a:hover {
+.projectCardContent a:hover {
     text-decoration: underline;
-    /* Subrayado del enlace al pasar el ratón */
 }
 
-.cardContent:hover {
+.projectCardContent:hover {
     transform: translateY(-5px);
-    /* Efecto de elevación al pasar el ratón */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    /* Sombra más prominente al pasar el ratón */
 }
 
-.iconsContainer {
+.projectsCardIconsContainer {
     display: flex;
     gap: 10px;
 }
 
-.iconsContainer span svg {
+.projectsCardIconsContainer span svg {
     width: 24px;
     height: 24px;
-   
 }
+
+
+
+
+
+
+
+/* 
+.projectsCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px;
+    background-color: #474747;
+}
+
+.projectCardContent {
+    background-color: #121212;
+    border: 2px solid #00D1A0;
+    border-radius: 12px;
+    padding: 16px;
+    width: calc(50% - 20px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; 
+}
+
+.projectsCardContentContainer {
+    display: flex;
+    flex: 1; 
+    align-items: stretch; 
+    gap: 16px;
+}
+
+.projectsCardTextContent {
+    flex: 1;
+    background-color: #00D1A0; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+}
+
+.projectCardImgBox {
+    flex: 1;
+    background-color: #00D1A0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+}
+
+.projectCardImgBox img {
+    width: 100%;
+    height: auto ;
+    object-fit: contain; 
+}
+
+.projectCardContent h2 {
+    margin: 16px 0 8px;
+    font-size: 1.5rem;
+}
+
+.projectCardContent p {
+    color: #555;
+}
+
+.projectCardContent a {
+    color: #00D1A0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.projectCardContent a:hover {
+    text-decoration: underline;
+}
+
+.projectCardContent:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.projectsCardIconsContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.projectsCardIconsContainer span svg {
+    width: 24px;
+    height: 24px;
+} */

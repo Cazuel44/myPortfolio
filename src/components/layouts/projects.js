@@ -5,16 +5,16 @@ import { Button } from '../common/button';
 
 export const Projects = ({ onShowAboutMe, onShowContact }) => {
     return (
-        <div className="projectContainer">
-            <div className='buttonsProjects'>
+        <div className="projectsContainer">
+            {/* <div className='buttonsProjects'>
                 <Button onClick={onShowAboutMe}>Volver a Sobre Mí</Button>
-            </div>
+            </div> */}
             <div>
                 <ProjectsCard />
             </div>
-            <div className='buttonsProjects'>
+            {/* <div className='buttonsProjects'>
                 <Button onClick={onShowContact}>Contáctame</Button>
-            </div>
+            </div> */}
         </div>
     );
 }
