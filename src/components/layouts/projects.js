@@ -1,7 +1,7 @@
 import React from 'react';
 import './projects.css';
 import { ProjectsCard } from '../common/projectsCard'
-import { Button } from '../common/button';
+/* import { Button } from '../common/button'; */
 
 export const Projects = ({ onShowAboutMe, onShowContact }) => {
     return (

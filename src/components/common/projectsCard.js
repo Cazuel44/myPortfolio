@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './projectsCard.css';
 import projectsData from '../../data/projectsData.json';
+import { ProjectAnimationItemCard } from './projectAnimationItemCard';
 import { JsIcon } from '../../icons/jsIcon';
 import { HtmlIcon } from '../../icons/htmlIcon';
 import { CssIcon } from '../../icons/cssIcon';
@@ -12,6 +13,8 @@ import { MongoDbIcon } from '../../icons/mongoDbIcon';
 import { HandlebarsIcon } from '../../icons/handlebarsIcon';
 import { FirebaseIcon } from '../../icons/firebaseIcon';
 import { ExpoIcon } from '../../icons/expoIcon';
+import { useInView } from 'react-intersection-observer';
+import { Button } from './button';
 
 const tecnologiesIcons = {
   'Boostrap': <BoostrapIcon />,
@@ -28,6 +31,40 @@ const tecnologiesIcons = {
 }
 
 export const ProjectsCard = () => {
+  const [visibleIndex, setVisibleIndex] = useState(0);
+
+  const handleNext = () => {
+    setVisibleIndex(prevIndex => (prevIndex < projectsData.length - 1 ? prevIndex + 1 : prevIndex));
+  };
+
+  const handlePrev = () => {
+    setVisibleIndex(prevIndex => (prevIndex > 0 ? prevIndex - 1 : prevIndex));
+  };
+
+  return (
+    <div className="projectsCardContainer">
+      {projectsData.map((project, index) => (
+        <ProjectAnimationItemCard
+          key={project.id}
+          project={project}
+          index={index}
+          tecnologiesIcons={tecnologiesIcons}
+          isVisible={index === visibleIndex}
+        />
+      ))}
+      <div className="navigationButtons">
+        <Button onClick={handlePrev} disabled={visibleIndex === 0}>Anterior</Button>
+        <Button onClick={handleNext} disabled={visibleIndex === projectsData.length - 1}>Siguiente</Button>
+      </div>
+    </div>
+  );
+};
+
+
+
+/* export const ProjectsCard = () => {
+
+
   return (
     <div className="projectsCardContainer">
       {projectsData.map((project) => (
@@ -45,7 +82,7 @@ export const ProjectsCard = () => {
               <a href={project.enlaceGitHub} target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
             </div>
             <div className='projectCardImgBox'>
-              <img src={project.imagen} /* alt={project.nombre} */ />
+              <img src={project.imagen} alt={project.nombre} />
             </div>
 
           </div>
@@ -53,4 +90,4 @@ export const ProjectsCard = () => {
       ))}
     </div>
   );
-};
+}; */
