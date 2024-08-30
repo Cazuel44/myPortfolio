@@ -5,7 +5,7 @@ import { Button } from '../common/button';
 
 
 
-export const AboutMe = ({ onShowProjects }) => {
+export const AboutMe = () => {
 
     return (
         <div className="containerAboutMe">
@@ -25,16 +25,16 @@ export const AboutMe = ({ onShowProjects }) => {
                     con un enfoque en HTML, CSS, y React.js, como en el backend, utilizando Node.js y MongoDB para crear aplicaciones funcionales enfocadas al E-commerce 🛒.
                 </p>
             </div>
-            <div>
+            <div className='h1AboutMeExperience'>
                 <h1>Experiencia</h1>
                 <p>
                     Estoy en busca de mi primera oportunidad laboral ya que la experiencia que tengo en este momento es solo de los proyectos que he presentado en coderhouse.
                 </p>
-                
+
             </div>
-            <div className='button1AboutMe'>
+            {/* <div className='button1AboutMe'>
                 <Button onClick={onShowProjects}>Mis Proyectos</Button>
-            </div>
+            </div> */}
         </div>
     );
 }

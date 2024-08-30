@@ -1,74 +1,82 @@
+.projectsCard {
+    padding: 16px;
+}
+
 .projectsCardContainer {
     display: flex;
-    flex-direction: column;
+    overflow: hidden;
+    /* Asegura que el contenido fuera de vista no se muestre */
+    /* justify-content: flex-start; */
     align-items: center;
-    gap: 16px;
-    padding: 16px;
-    background-color: #474747;
-    /* height: 100vh; */
-    /*   */
+    width: 100%;
+    /* Asegura que el contenedor tenga el ancho completo */
+    /* position: relative; */
+    /* Asegura que los elementos hijos se posicionen correctamente */
+    /* background-color: #00d1a085; */
 }
+
 
 .projectCardContent {
-    background-color: #121212;
-    border: 2px solid #00D1A0;
-    border-radius: 12px;
+    max-width: 100%;
+    background-color: #000000;
+    border: 2px solid #00d1a0;
+    border-radius: 16px;
     padding: 16px;
-    width: 100%;
-    /* Asegura que ocupe todo el ancho del contenedor */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
-    display: flex;
-    gap: 16px;
-    height: 100%;
+    margin: 0 4px;
+    /* Para espaciar las tarjetas y permitir que se vea un poco de las siguientes/anteriores */
+    /* margin-right: -932px; */
+    /* flex-shrink: 0; */
+    transition: transform 0.5s ease-in-out;
+    /* min-height: 400px; */
+    align-content: center;
+    /* opacity: 0.5; */
 }
 
-.projectCardContent.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.projectCardContent.hidden {
-    opacity: 0;
-    transform: translateY(100px);
-}
 
 .projectsCardContentContainer {
-    display: grid;
-    /* Cambiar a Grid si se necesita una estructura de columnas */
-    grid-template-columns: 2fr 1fr;
-    /* Asegura que los elementos se distribuyan en dos columnas */
-    gap: 100px;
-    align-items: stretch;
-    /* Asegura que todos los elementos hijos se estiren para ocupar la misma altura */
+    display: flex;
+    /* Cambia a flex si necesitas un diseño en fila */
+    gap: 20px;
+    /* Ajusta el espacio entre tarjetas si es necesario */
+    align-items: center;
+    width: 100%;
 }
+
 
 .projectsCardTextContent {
     display: flex;
+    width: 100%;
+    /* flex: 1; */
     flex-direction: column;
     justify-content: space-between;
-    grid-column: 1 / 2;
+    /* grid-column: 1 / 2; */
     /* Ocupa la primera columna */
+    border-right: 2px solid;
+    padding-right: 8px;
 }
 
 .projectCardImgBox {
     display: flex;
     justify-content: center;
+
     /* justify-content: space-evenly; */
     /* background-color: aliceblue; */
     /* grid-column: 2 / 2; */
     /* overflow: hidden; */
     width: 100%;
     /* Asegura que el contenedor de la imagen ocupe toda la columna */
-    height: 100%;
-    /* height: 500px; */
+    /* height: 100%; */
+    max-height: 350px;
 }
 
 .projectCardImgBox img {
     max-width: 100%;
-    max-height: 400px;
-    border: 2px solid #00D1A0;
+    /* max-height: 400px; */
+    /* border: 2px solid #00D1A0; */
     object-fit: contain;
+    /* border-radius: 16px; */
 }
 
 .projectCardContent h2 {
@@ -77,7 +85,8 @@
 }
 
 .projectCardContent p {
-    color: #555;
+    /* color: #555; */
+    color: #e1e1e1;
 }
 
 .projectCardContent a {
@@ -91,7 +100,7 @@
 }
 
 .projectCardContent:hover {
-    transform: translateY(-5px);
+    /* transform: translateY(-5px); */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -105,8 +114,18 @@
     height: 24px;
 }
 
+.navigationButtons {
+    margin-top: 20px;
+    /* Ajusta el margen según tus necesidades */
+    display: flex;
+    gap: 10px;
+}
 
-
+.slick-track {
+    display: flex;
+    gap: 12px;
+    /* Ajusta el espacio entre las tarjetas */
+}
 
 
 

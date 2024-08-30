@@ -9,9 +9,9 @@ export const Contact = ({ onShowAboutMe }) => {
             <div className='cardContainerContact'>
                 <ContactCard />
             </div>
-            <div className='button1Contact'>
+            {/* <div className='button1Contact'>
                 <Button onClick={onShowAboutMe}>Inicio</Button>
-            </div>
+            </div> */}
         </div>
     )
 }

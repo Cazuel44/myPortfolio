@@ -18,6 +18,7 @@
     width: 5rem; /* Ajusta el ancho según el tamaño del h1 */
     height: auto;
     margin-right: 10px;
+    border-radius: 50px;
 }
 
 .containerHeder h1 {
